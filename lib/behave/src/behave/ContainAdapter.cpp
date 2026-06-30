@@ -149,7 +149,6 @@ void ContainAdapter::doContainRun()
 
         double  resourceArrival;
         double  resourceBaseCost;
-        double  resourceCost;
         std::string resourceDescription;
         double  resourceDuration;
         Sem::ContainFlank resourceFlank;

@@ -286,42 +286,42 @@ void FineDeadFuelMoistureTool::memberwiseCopyAssignment(const FineDeadFuelMoistu
 
 int FineDeadFuelMoistureTool::getAspectIndexSize() const
 {
-    return aspects_.size();
+    return int(aspects_.size());
 }
 
 int FineDeadFuelMoistureTool::getDryBulbTemperatureIndexSize() const
 {
-    return dryBulbTemperatures_.size();
+    return int(dryBulbTemperatures_.size());
 }
 
 int FineDeadFuelMoistureTool::getElevationIndexSize() const
 {
-    return elevations_.size();
+    return int(elevations_.size());
 }
 
 int FineDeadFuelMoistureTool::getMonthIndexSize() const
 {
-    return months_.size();
+    return int(months_.size());
 }
 
 int FineDeadFuelMoistureTool::getRelativeHumidityIndexSize() const
 {
-    return relativeHumidities_.size();
+    return int(relativeHumidities_.size());
 }
 
 int FineDeadFuelMoistureTool::getSlopeIndexSize() const
 {
-    return slopes_.size();
+    return int(slopes_.size());
 }
 
 int FineDeadFuelMoistureTool::getShadingIndexSize() const
 {
-    return shadings_.size();
+    return int(shadings_.size());
 }
 
 int FineDeadFuelMoistureTool::getTimeOfDayIndexSize() const
 {
-    return timesOfDay_.size();
+    return int(timesOfDay_.size());
 }
 
 std::string FineDeadFuelMoistureTool::getAspectLabelAtIndex(const int index) const

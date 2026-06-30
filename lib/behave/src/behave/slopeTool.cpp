@@ -165,7 +165,7 @@ void SlopeTool::calculateSlopeFromMapMeasurements(const int mapRepresentativeFra
 
 int SlopeTool::getNumberOfHorizontalDistances() const
 {
-    return horizontalDistances_.size();
+    return int(horizontalDistances_.size());
 }
 
 double SlopeTool::getHorizontalDistanceMaxSlope(const SlopeUnits::SlopeUnitsEnum slopeUnits) const
@@ -215,7 +215,7 @@ double SlopeTool::getSlopeElevationChangeFromMapMeasurements(LengthUnits::Length
 
 int SlopeTool::getNumberOfRepresentativeFractions() const
 {
-    return representativeFractions_.size();
+    return int(representativeFractions_.size());
 }
 
 int SlopeTool::getRepresentativeFractionAtIndex(const int index) const

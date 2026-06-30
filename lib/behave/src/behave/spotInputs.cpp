@@ -251,7 +251,7 @@ void SpotInputs::initializeMembers()
     windSpeedAtTwentyFeet_ = 0.0;
     buringPileFlameHeight_ = 0.0;
     surfaceFlameLength_ = 0.0;
-    torchingTrees_ = 0.0;
+    torchingTrees_ = 0;
     DBH_ = 0.0;
     treeHeight_ = 0.0;
 }

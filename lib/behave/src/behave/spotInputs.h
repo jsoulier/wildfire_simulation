@@ -149,7 +149,7 @@ protected:
     double buringPileFlameHeight_ = 0.0;
     double surfaceFlameLength_ = 0.0;
     double crownFirelineIntensity_ = 0.0;
-    int torchingTrees_ = 0.0;
+    int torchingTrees_ = 0;
     double treeHeight_ = 0.0;
     SpotTreeSpecies::SpotTreeSpeciesEnum treeSpecies_;
 };

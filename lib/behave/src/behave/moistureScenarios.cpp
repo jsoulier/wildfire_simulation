@@ -28,7 +28,7 @@ MoistureScenarios::MoistureScenarios(const MoistureScenarios& rhs)
 
 int MoistureScenarios::getNumberOfMoistureScenarios()
 {
-    return moistureScenarioVector_.size();
+    return int(moistureScenarioVector_.size());
 }
 
 int MoistureScenarios::getMoistureScenarioIndexByName(const std::string name)

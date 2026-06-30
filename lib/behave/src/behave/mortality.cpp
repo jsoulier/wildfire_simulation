@@ -632,7 +632,7 @@ double Mortality::getScorchHeight(LengthUnits::LengthUnitsEnum scorchHeightUnits
 *******************************************************************************************************/
 double  Mortality::calculateMortalityCrownScorch()
 {
-    double f, barkThicknessPrime, DBHcm, treeHeight, LCR, HCR, CSL, P, Fl, CH;
+    double f, barkThicknessPrime, DBHcm, treeHeight, HCR, CSL, P, Fl, CH;
     double  blackHillsFlameLength, CBH;
     double DBH, scorchHeight;
     int  mortalityEquationNumber;
@@ -891,7 +891,7 @@ double  Mortality::calculateMortalityCrownScorch()
 * P(m) = 1/1 + EXP(-(1.104 + (DBH * -0.156) + (0.013* pct live crown length scorched) + (0.001 * DBH * pct live crown length scorched)))
 *
 * pct live crown length scorched =
-*  ((max height of crown length scorched – canopy base height)/(tree height – canopy base height)) *100
+*  ((max height of crown length scorched ï¿½ canopy base height)/(tree height ï¿½ canopy base height)) *100
 *
 *  In: treeHeight.... Tree height - feet
 *      crownBaseHeight.... crown base height - feet

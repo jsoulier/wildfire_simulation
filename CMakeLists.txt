@@ -1,8 +1,11 @@
+cmake_minimum_required(VERSION 3.24)
+project(fire_simulator)
+
 option(FIRE_SIMULATOR_USE_VENDORED "Use vendored libraries" ON)
 option(FIRE_SIMULATOR_USE_TRACY "Enable Tracy profiling zones" OFF)
 set(GLM_BUILD_LIBRARY OFF)
 
-if(USE_VENDORED)
+if(FIRE_SIMULATOR_USE_VENDORED)
     add_subdirectory(lib/json)
     add_subdirectory(lib/unordered_dense)
     add_subdirectory(lib/taskflow)
