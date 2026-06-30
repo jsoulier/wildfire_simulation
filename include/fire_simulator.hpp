@@ -29,7 +29,7 @@ struct FireSimulatorParams
     FireSimulatorCoordinatorType CoordinatorType;
     int FireX;                                                 // fire origin
     int FireY;                                                 // fire origin
-    std::function<FireFuelModelType(int x, int y)> FuelModel;  // see behave/src/behave/fuelModels.cpp
+    std::function<FireFuelModelType(int x, int y)> FuelModel;
     std::function<double(int x, int y)> Longitude;
     std::function<double(int x, int y)> Latitude;
     std::function<float(int x, int y)> Elevation;              // metres

@@ -60,7 +60,6 @@ bool FireSimulatorRun(const FireSimulatorParams& params)
             {"shape", {columns, rows}},
             {"origin", {0, 0}},
             {"wrapped", false},
-            {"cell_size", params.Resolution},
             {"neighborhood", {
                 {"type", "moore"},
                 {"range", 1},
@@ -92,7 +91,7 @@ bool FireSimulatorRun(const FireSimulatorParams& params)
                     {
                         continue;
                     }
-                    nlohmann::json cellConfig = {
+                    nlohmann::json config = {
                         {"cell_map", nlohmann::json::array({nlohmann::json::array({x, y})})},
                         {"neighborhood", neighborhood},
                         {"state", {
@@ -117,7 +116,7 @@ bool FireSimulatorRun(const FireSimulatorParams& params)
                             {"MoistureLiveWoody", params.MoistureLiveWoody(x, y)}
                         }}
                     };
-                    model->addCells(model->loadCellConfig(std::format("{},{}", x, y), cellConfig));
+                    model->addCells(model->loadCellConfig(std::format("{},{}", x, y), config));
                 }
             }
         }
